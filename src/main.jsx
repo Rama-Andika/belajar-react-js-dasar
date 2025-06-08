@@ -11,6 +11,9 @@ import PreventDefault from "./components/PreventDefault.jsx";
 import Counter from "./components/Counter.jsx";
 import Snapshot from "./components/Snapshot.jsx";
 import ContactFrom from "./components/ContactFrom.jsx";
+import ContactFromWithoutRef from "./components/ContactFromWithoutRef.jsx";
+import CartWithoutReducer from "./components/CartWithoutReducer.jsx";
+import CartWithReducer from "./components/CartWithReducer";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -20,6 +23,6 @@ createRoot(document.getElementById("root")).render(
       <p>Ini adalah konten dalam Container</p>
     </Container> */}
     {/* <TodoList /> */}
-    <ContactFrom />
+    <CartWithReducer />
   </StrictMode>
 );
