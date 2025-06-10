@@ -14,15 +14,19 @@ import ContactFrom from "./components/ContactFrom.jsx";
 import ContactFromWithoutRef from "./components/ContactFromWithoutRef.jsx";
 import CartWithoutReducer from "./components/CartWithoutReducer.jsx";
 import CartWithReducer from "./components/CartWithReducer";
+import { ThemeProvider } from "./contexts/ThemeContext";
+import ThemeContextExample from "./components/ThemeContextExample.jsx";
+import RefDOMManipulation from "./components/RefDOMManipulation.jsx";
+import EffectComponent from "./components/EffectComponent.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    {/* <HelloWorldParent /> */}
-    {/* <Paragraph />
-    <Container>
-      <p>Ini adalah konten dalam Container</p>
-    </Container> */}
-    {/* <TodoList /> */}
-    <CartWithReducer />
+    <ThemeProvider>
+      {/* <HelloWorldParent /> */}
+      {/* <Paragraph />
+      {/* <TodoList /> */}
+      {/* <CartWithReducer /> */}
+      <EffectComponent />
+    </ThemeProvider>
   </StrictMode>
 );

@@ -1,10 +1,11 @@
-import { useState } from "react";
+import {useState } from "react";
 import { useImmerReducer } from "use-immer";
 import { cartReducer } from "../reducerProduk";
-
+import Component1 from "./Component1";
 
 
 const CartWithReducer = () => {
+
   const [cart, dispatch] = useImmerReducer(cartReducer, []);
 
   const [produk, setProduk] = useState("");
@@ -19,9 +20,10 @@ const CartWithReducer = () => {
     dispatch({ type: "HAPUS_PRODUK", id: produkId });
   };
 
+
   return (
     <div>
-      <h2>Cart Item (Without Reducer)</h2>
+      <h2>Cart Item (With Reducer)</h2>
       <div>
         <input
           className="border"
@@ -53,6 +55,8 @@ const CartWithReducer = () => {
           </div>
         ))}
       </div>
+      <p className="mt-10">Permasalah drilling props</p>
+      <Component1 data={cart} />
     </div>
   );
 };
