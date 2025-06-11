@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Poppins";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
